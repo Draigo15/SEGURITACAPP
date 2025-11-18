@@ -1,0 +1,151 @@
+# ============================================
+# GITIGNORE PRINCIPAL - Proyecto SeguriTac
+# ============================================
+
+# ===== Variables de Entorno =====
+# CRÍTICO: Nunca subir archivos con secrets
+.env
+.env.*
+!.env.example
+*.env
+
+# ===== Dependencias =====
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# ===== Credenciales y Keys =====
+# Firebase y servicios
+serviceAccountKey.json
+google-services.json
+GoogleService-Info.plist
+
+# Keystores y certificados Android
+*.keystore
+*.jks
+*.p8
+*.p12
+*.key
+*.mobileprovision
+*.pem
+*.cer
+*.certSigningRequest
+
+# API Keys
+**/apiKeys.js
+**/secrets.js
+
+# ===== Builds y Compilados =====
+build/
+dist/
+out/
+.expo/
+.expo-shared/
+web-build/
+
+# Android
+android/app/build/
+android/app/release/
+android/.gradle/
+android/local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# iOS (si aplica en futuro)
+ios/build/
+ios/Pods/
+*.xcworkspace
+*.xcuserstate
+
+# ===== Temporales y Cache =====
+.cache/
+tmp/
+temp/
+*.log
+*.tmp
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# IDEs
+.vscode/
+.idea/
+*.sublime-workspace
+*.sublime-project
+.history/
+
+# ===== Testing =====
+coverage/
+.nyc_output/
+jest-results*.json
+!jest-results.latest.json
+*.lcov
+
+# E2E
+e2e/artifacts/
+artifacts/
+screenshots/
+videos/
+detox-log.txt
+*.mp4
+*.webm
+
+# ===== Sistema Operativo =====
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.directory
+.Trash-*
+
+# ===== Expo =====
+.expo/
+.expo-shared/
+expo-env.d.ts
+*.jsbundle
+*.orig.*
+
+# ===== TypeScript =====
+*.tsbuildinfo
+tsconfig.tsbuildinfo
+
+# ===== Misc =====
+.terraform/
+*.tfstate
+*.tfstate.backup
+
+# ============================================
+# PERMITIDOS (Documentación y Configs Base)
+# ============================================
+# ✅ Los siguientes SÍ se suben:
+# - *.md (documentación)
+# - README.md
+# - package.json
+# - app.json
+# - .detoxrc.json
+# - jest.config.js
+# - babel.config.js
+# - .eslintrc.js
+# - .prettierrc.js
+# - eas.json
+
+# ===== Archivos Específicos del Proyecto =====
+# Agregar aquí exclusiones específicas si es necesario
